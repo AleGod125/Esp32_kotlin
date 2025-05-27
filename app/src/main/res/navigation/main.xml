@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/acercaFragment"
+        android:name="com.example.esp32.UI.AcercaD.AcercaFragment"
+        android:label="fragment_acerca"
+        tools:layout="@layout/fragment_acerca" />
+    <fragment
+        android:id="@+id/HIstorialFragment"
+        android:name="com.example.esp32.UI.Historial.HistorialFragment"
+        android:label="fragment_h_istorial"
+        tools:layout="@layout/fragment_h_istorial" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.esp32.UI.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/controlFragment2"
+        android:name="com.example.esp32.UI.control.ControlFragment"
+        android:label="fragment_control"
+        tools:layout="@layout/fragment_control" />
+</navigation>

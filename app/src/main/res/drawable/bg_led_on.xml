@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Glow exterior difuminado -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#9A99CC00" /> <!-- Verde claro con transparencia -->
+        </shape>
+    </item>
+
+    <!-- Borde interior más definido -->
+    <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="4dp" android:color="@android:color/holo_green_light" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.home.HomeFragment"
+    android:background="#1A191C"
+    android:padding="18dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control Remoto de Módulo Relé con ESP32"
+                android:textAlignment="center"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Automatiza, controla y monitorea tu sistema de manera eficiente y segura."
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_marginBottom="18dp"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_rounded_black"
+                android:layout_marginBottom="18dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿De qué trata nuestro proyecto?"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Este proyecto consiste en el desarrollo de una plataforma que permite controlar de forma remota un módulo relé a través de un microcontrolador ESP32. Nuestra aplicación facilita el monitoreo del estado de los dispositivos conectados, así como su control inmediato desde cualquier ubicación con acceso a Internet."
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Funcionalidades Principales"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:layout_marginBottom="12dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_incio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inicio de Sesión Seguro"
+                android:background="@android:color/transparent"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:padding="8dp"
+                android:drawableStart="@drawable/lock"
+                android:drawableEnd="@drawable/outline_arrow_drop_down_24"
+                android:drawablePadding="8dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_I"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                android:text="Acceso protegido mediante autenticación basada en JWT o sesiones, garantizando la seguridad de tus datos."
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C1C1C1"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Control en Tiempo Real"
+                android:background="@android:color/transparent"
+                android:textSize="18sp"
+                android:padding="8dp"
+
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/activity"
+                android:drawableEnd="@drawable/outline_arrow_drop_down_24"
+                android:drawablePadding="8dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                android:text="Conoce el estado del sensor/actuador y el módulo relé. Realiza acciones de encendido o apagado en tiempo real."
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C1C1C1"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_historial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Historial de Actividad"
+                android:background="@android:color/transparent"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/outline_calendar_clock_24"
+                android:drawableEnd="@drawable/outline_arrow_drop_down_24"
+                android:drawablePadding="8dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_H"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                android:text="Registra todas las acciones realizadas sobre el dispositivo, incluyendo fecha, hora y tipo de acción ejecutada."
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C1C1C1"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Generacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generacion de reportes"
+                android:background="@android:color/transparent"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/file_earmark_text"
+                android:drawableEnd="@drawable/outline_arrow_drop_down_24"
+                android:drawablePadding="8dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_G"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                android:text="Exporta reportes detallados en formato PDF o Excel según parámetros de sensor y rango de fechas seleccionado."
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C1C1C1"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Infromacion de equipo"
+                android:background="@android:color/transparent"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/person"
+                android:drawableEnd="@drawable/outline_arrow_drop_down_24"
+                android:drawablePadding="8dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                android:text="Consulta el apartado 'Acerca de' para conocer a los desarrolladores detrás de este proyecto innovador."
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C1C1C1"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Dise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diseño Responsivo"
+                android:background="@android:color/transparent"
+                android:textSize="18sp"
+                android:padding="8dp"
+
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/phone"
+                android:drawableEnd="@drawable/outline_arrow_drop_down_24"
+                android:drawablePadding="8dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                android:text="Interfaz optimizada para dispositivos móviles, tablets y computadoras de escritorio, asegurando una experiencia fluida."
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C1C1C1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proyecto desarrollado para el control inteligente de módulos Relé mediante ESP32 | 2025"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                />
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Esp32</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="control">Control</string>
+    <string name="historial">Historial</string>
+    <string name="acerca_de">Acerca De</string>
+    <string name="Edwin">Nombre: Edwin Santiago \n Ocupaciones: Estudiante / Empleado \n Cargo: Desarrollador Frontend</string>
+    <string name="Efrain">Nombre: Efrain Davila \nOcupaciones: Estudiante / Empleado \n Cargo: Desarrollador Backend</string>
+    <string name="Juan">Nombre: Juan Lazaro \n Ocupaciones: Estudiante / Empleado  \n Cargo: Diseñador UI/UX</string>
+    <string name="Ale">Nombre: Alejandro Navarro \n Ocupaciones: Estudiante / Empleado \n Cargo: Desarrollador de Hardware</string>
+</resources>
