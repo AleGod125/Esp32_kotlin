@@ -14,6 +14,8 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+//a
+
 class ControlFragment : Fragment() {
     private var _binding: FragmentControlBinding? = null
     private val binding get() = _binding!!
